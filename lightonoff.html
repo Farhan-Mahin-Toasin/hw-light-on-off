@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light On/Off Switch</title>
+    <style>
+        body {
+            text-align: center;
+            margin-top: 50px;
+            font-family: Arial, sans-serif;
+        }
+
+        #bulb {
+            width: 200px;
+            height: 300px;
+        }
+
+        #controls {
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Light On/Off Switch</h1>
+    
+    <!-- Lightbulb Image -->
+    <img id="bulb" src="https://www.w3schools.com/js/pic_bulboff.gif" alt="Lightbulb">
+
+    <!-- Buttons to turn light on and off -->
+    <div id="controls">
+        <button onclick="turnOn()">Turn On</button>
+        <button onclick="turnOff()">Turn Off</button>
+    </div>
+
+    <script>
+        // Function to turn the light on
+        function turnOn() {
+            var bulb = document.getElementById("bulb");
+            bulb.src = "https://www.w3schools.com/js/pic_bulbon.gif";
+        }
+
+        // Function to turn the light off
+        function turnOff() {
+            var bulb = document.getElementById("bulb");
+            bulb.src = "https://www.w3schools.com/js/pic_bulboff.gif";
+        }
+    </script>
+
+</body>
+</html>
